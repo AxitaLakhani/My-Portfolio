@@ -191,11 +191,13 @@ export default function Hero() {
 
         const radius = 225;
 
-        const x =
-          radius * Math.cos(angle);
+        const x = Math.round(
+          radius * Math.cos(angle)
+        );
 
-        const y =
-          radius * Math.sin(angle);
+        const y = Math.round(
+          radius * Math.sin(angle)
+        );
 
         return (
           <motion.div
@@ -265,12 +267,13 @@ export default function Hero() {
 
         const radius = 130;
 
-        const x =
-          radius * Math.cos(angle);
+        const x = Math.round(
+        radius * Math.cos(angle)
+        );
 
-        const y =
-          radius * Math.sin(angle);
-
+        const y = Math.round(
+        radius * Math.sin(angle)
+        );
         return (
           <motion.div
             key={tech}

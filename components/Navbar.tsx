@@ -19,10 +19,11 @@ export default function Navbar() {
   return (
     <header
       className="
-      fixed top-0 left-0 w-full z-50
-      backdrop-blur-lg
-      bg-black/20
-      border-b border-white/10
+      fixed top-0 left-0 w-full z-[999]
+        backdrop-blur-xl
+        bg-black/60
+        supports-[backdrop-filter]:bg-black/30
+        border-b border-white/10
       "
     >
       <nav className="max-w-7xl mx-auto px-5 py-5">
@@ -74,47 +75,51 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
 
-        <div
-          className={`
-          md:hidden
-          overflow-hidden
-          transition-all
-          duration-300
-          ${
-            open
-              ? "max-h-[500px] opacity-100 mt-5"
-              : "max-h-0 opacity-0"
-          }
-          `}
-        >
-          <div
-            className="
-            flex flex-col
-            gap-5
-            py-5
-            bg-white/5
-            backdrop-blur-xl
-            rounded-2xl
-            border border-white/10
-            mt-3
-            "
-          >
-            {links.map((link) => (
-              <Link
-                key={link}
-                href={`#${link.toLowerCase()}`}
-                onClick={() => setOpen(false)}
-                className="
-                px-5
-                hover:text-purple-500
-                transition
-                "
-              >
-                {link}
-              </Link>
-            ))}
-          </div>
-        </div>
+<div
+  className={`
+  md:hidden
+  overflow-hidden
+  transition-all
+  duration-300
+  ${
+    open
+      ? "max-h-[500px] opacity-100 mt-5"
+      : "max-h-0 opacity-0"
+  }
+  `}
+>
+  <div
+    className="
+    flex flex-col
+    gap-2
+    py-4
+    rounded-2xl
+    border border-white/10
+    mt-3
+    bg-zinc-900/95
+    shadow-xl
+    "
+  >
+    {links.map((link) => (
+      <Link
+        key={link}
+        href={`#${link.toLowerCase()}`}
+        onClick={() => setOpen(false)}
+        className="
+        px-5
+        py-3
+        text-white
+        hover:text-purple-500
+        hover:bg-white/5
+        rounded-lg
+        transition
+        "
+      >
+        {link}
+      </Link>
+    ))}
+  </div>
+</div>
 
       </nav>
     </header>

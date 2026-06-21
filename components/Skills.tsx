@@ -6,7 +6,7 @@ return(
 
 <section
 id="skills"
-className="py-10 px-6"
+className="py-10 px-6 sm:px-6 overflow-hidden"
 >
 
 <div className="max-w-7xl mx-auto">
@@ -36,7 +36,8 @@ responsive and scalable applications.
 
 <h3
 className="
-text-2xl
+text-xl
+sm:text-2xl
 font-bold
 mb-6
 text-white
@@ -75,8 +76,10 @@ key={i}
 
 className="
 group
-px-6
-py-4
+px-4
+sm:px-6
+py-3
+sm:py-4
 rounded-2xl
 bg-white/5
 backdrop-blur-lg
@@ -95,6 +98,8 @@ cursor-pointer
 
 <span
 className="
+text-sm
+sm:text-base
 text-gray-200
 group-hover:text-white
 "
