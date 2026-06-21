@@ -278,7 +278,7 @@ Location
 
 <p className="font-medium">
 
-Surat, Gujarat, India
+Junagadh, Gujarat, India
 
 </p>
 
