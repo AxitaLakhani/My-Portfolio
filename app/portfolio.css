@@ -1,0 +1,113 @@
+/* Full Portfolio Background */
+
+.portfolio-bg{
+position:relative;
+min-height:100vh;
+overflow:hidden;
+color:white;
+
+/* Animated gradient */
+
+background:linear-gradient(
+180deg,
+#020617,
+#0f172a,
+#132238,
+#1e1b4b,
+#10213d,
+#0b1220,
+#020617
+);
+
+background-size:100% 400%;
+
+animation:gradientFlow 15s ease infinite;
+}
+
+
+/* Soft glow top */
+
+.portfolio-bg::before{
+content:"";
+position:absolute;
+width:700px;
+height:700px;
+
+top:-250px;
+left:-250px;
+
+background:
+radial-gradient(
+circle,
+rgba(168,85,247,.15),
+transparent 70%
+);
+
+filter:blur(100px);
+}
+
+
+/* Soft glow bottom */
+
+.portfolio-bg::after{
+content:"";
+position:absolute;
+
+width:700px;
+height:700px;
+
+bottom:-250px;
+right:-250px;
+
+background:
+radial-gradient(
+circle,
+rgba(6,182,212,.12),
+transparent 70%
+);
+
+filter:blur(100px);
+}
+
+
+/* Grid */
+
+.grid-pattern{
+position:absolute;
+inset:0;
+
+background-image:
+linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),
+linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);
+
+background-size:50px 50px;
+
+opacity:.5;
+}
+
+
+/* Content */
+
+.content{
+position:relative;
+z-index:10;
+}
+
+
+/* Background movement */
+
+@keyframes gradientFlow{
+
+0%{
+background-position:0% 0%;
+}
+
+50%{
+background-position:0% 100%;
+}
+
+100%{
+background-position:0% 0%;
+}
+
+}
