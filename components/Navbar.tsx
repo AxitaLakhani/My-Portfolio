@@ -1,50 +1,178 @@
-"use client"
+"use client";
 
-import Link from "next/link"
+import { useState } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
-const links=[
-"Home",
-"About",
-"Projects",
-"Experience",
-"Skills",
-"Contact"
-]
+const links = [
+  "Home",
+  "About",
+  "Projects",
+  "Experience",
+  "Skills",
+  "Contact",
+];
 
-export default function Navbar(){
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
 
-return(
+  return (
+    <header
+      className="
+      fixed top-0 left-0 w-full z-50
+      backdrop-blur-lg
+      bg-black/20
+      border-b border-white/10
+      "
+    >
+      <nav className="max-w-7xl mx-auto px-5 py-5">
 
-<header className="fixed top-0 z-50 w-full backdrop-blur-lg border-b">
+        <div className="flex items-center justify-between">
 
-<nav className="container mx-auto flex justify-between p-5">
+          {/* Logo */}
 
-<h1 className="font-bold text-xl">
-Akshita Lakhani
-</h1>
+          <h1 className="font-bold text-xl sm:text-2xl">
+            Akshita Lakhani
+          </h1>
 
-<div className="hidden md:flex gap-8">
+          {/* Desktop menu */}
 
-{links.map(link=>(
+          <div className="hidden md:flex gap-8">
+            {links.map((link) => (
+              <Link
+                key={link}
+                href={`#${link.toLowerCase()}`}
+                className="
+                hover:text-purple-500
+                transition
+                "
+              >
+                {link}
+              </Link>
+            ))}
+          </div>
 
-<Link
-key={link}
-href={`#${link.toLowerCase()}`}
-className="hover:text-purple-500 transition"
->
+          {/* Mobile Toggle */}
 
-{link}
+          <button
+            onClick={() => setOpen(!open)}
+            className="
+            md:hidden
+            p-2
+            rounded-lg
+            border border-white/10
+            "
+          >
+            {open ? (
+              <X size={24} />
+            ) : (
+              <Menu size={24} />
+            )}
+          </button>
 
-</Link>
+        </div>
 
-))}
+        {/* Mobile Menu */}
 
-</div>
+        <div
+          className={`
+          md:hidden
+          overflow-hidden
+          transition-all
+          duration-300
+          ${
+            open
+              ? "max-h-[500px] opacity-100 mt-5"
+              : "max-h-0 opacity-0"
+          }
+          `}
+        >
+          <div
+            className="
+            flex flex-col
+            gap-5
+            py-5
+            bg-white/5
+            backdrop-blur-xl
+            rounded-2xl
+            border border-white/10
+            mt-3
+            "
+          >
+            {links.map((link) => (
+              <Link
+                key={link}
+                href={`#${link.toLowerCase()}`}
+                onClick={() => setOpen(false)}
+                className="
+                px-5
+                hover:text-purple-500
+                transition
+                "
+              >
+                {link}
+              </Link>
+            ))}
+          </div>
+        </div>
 
-</nav>
-
-</header>
-
-)
-
+      </nav>
+    </header>
+  );
 }
+
+
+
+
+
+
+// "use client"
+
+// import Link from "next/link"
+
+// const links=[
+// "Home",
+// "About",
+// "Projects",
+// "Experience",
+// "Skills",
+// "Contact"
+// ]
+
+// export default function Navbar(){
+
+// return(
+
+// <header className="fixed top-0 z-50 w-full backdrop-blur-lg border-b">
+
+// <nav className="container mx-auto flex justify-between p-5">
+
+// <h1 className="font-bold text-xl">
+// Akshita Lakhani
+// </h1>
+
+// <div className="hidden md:flex gap-8">
+
+// {links.map(link=>(
+
+// <Link
+// key={link}
+// href={`#${link.toLowerCase()}`}
+// className="hover:text-purple-500 transition"
+// >
+
+// {link}
+
+// </Link>
+
+// ))}
+
+// </div>
+
+// </nav>
+
+// </header>
+
+// )
+
+// }

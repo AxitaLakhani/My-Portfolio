@@ -29,75 +29,79 @@ export default function Hero() {
 
           {/* LEFT SIDE */}
 
-          <div className="order-2 lg:order-1 text-center lg:text-left">
+{/* LEFT SIDE */}
 
-            <motion.div
-              initial={{ opacity: 0, y: -15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: .5 }}
-              className="inline-block px-4 py-2 mb-6 rounded-full border border-purple-500/30 bg-white/5 backdrop-blur-sm"
-            >
-              ✨ Available for Work
-            </motion.div>
+<div className="order-1 text-center lg:text-left">
 
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: .8 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight"
-            >
-              Hi, I'm{" "}
-              <span className="text-zinc-100">
-                Akshita Lakhani
-              </span>
-            </motion.h1>
+  <motion.div
+    initial={{ opacity: 0, y: -15 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: .5 }}
+    className="inline-block px-4 py-2 mb-6 rounded-full border border-purple-500/30 bg-white/5 backdrop-blur-sm"
+  >
+    ✨ Available for Work
+  </motion.div>
 
-            <motion.h2
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: .3 }}
-              className="mt-5 text-xl sm:text-2xl font-semibold text-gray-300"
-            >
-              .NET Full Stack Developer
-            </motion.h2>
+  <motion.h1
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: .8 }}
+    className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight"
+  >
+    Hi, I'm{" "}
+    <span className="text-zinc-100">
+      Akshita Lakhani
+    </span>
+  </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: .4 }}
-              className="mt-6 text-gray-300 leading-relaxed text-sm sm:text-lg max-w-xl mx-auto lg:mx-0"
-            >
-              Passionate about building scalable web applications
-              using React, .NET and SQL Server. I focus on
-              creating clean UI, optimized performance and
-              seamless user experiences.
-            </motion.p>
+  <motion.h2
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: .3 }}
+    className="mt-5 text-xl sm:text-2xl font-semibold text-gray-300"
+  >
+    .NET Full Stack Developer
+  </motion.h2>
 
-            {/* BUTTONS */}
+  <motion.p
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: .4 }}
+    className="mt-6 text-gray-300 leading-relaxed text-sm sm:text-lg max-w-xl mx-auto lg:mx-0"
+  >
+    Passionate about building scalable web applications
+    using React, .NET and SQL Server. I focus on
+    creating clean UI, optimized performance and
+    seamless user experiences.
+  </motion.p>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: .7 }}
-              className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start"
-            >
-              <a
-                href="#projects"
-                className="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 transition flex items-center gap-2"
-              >
-                View Projects
-                <ArrowRight size={18}/>
-              </a>
+  {/* BUTTONS */}
 
-              <a
-                href="/Akshita-resume.pdf"
-                download
-                className="px-6 py-3 rounded-xl border border-gray-600 hover:border-purple-500 hover:bg-white/5 transition flex items-center gap-2"
-              >
-                <Download size={18}/>
-                Resume
-              </a>
-            </motion.div>
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: .7 }}
+    className="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start"
+  >
+    <a
+      href="#projects"
+      className="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 transition flex items-center gap-2"
+    >
+      View Projects
+      <ArrowRight size={18}/>
+    </a>
+
+    <a
+      href="/Akshita-resume.pdf"
+      download
+      className="px-6 py-3 rounded-xl border border-gray-600 hover:border-purple-500 hover:bg-white/5 transition flex items-center gap-2"
+    >
+      <Download size={18}/>
+      Resume
+    </a>
+  </motion.div>
+
+
 
             {/* STATS */}
 
@@ -137,11 +141,10 @@ export default function Hero() {
 
             </motion.div>
 
+
           </div>
 
           {/* RIGHT ORBIT */}
-
-         {/* RIGHT ORBIT */}
 
 <motion.div
   initial={{ opacity: 0, x: 100 }}
@@ -335,6 +338,7 @@ export default function Hero() {
 
         </div>
       </div>
+      
     </section>
   );
 }
