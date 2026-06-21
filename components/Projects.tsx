@@ -9,18 +9,18 @@ return(
 
 <section
 id="projects"
-className="py-28 px-6"
+className="py-10 px-6"
 >
 
 <div className="max-w-7xl mx-auto">
 
 <div className="text-center mb-16">
 
-<p className="text-2xl md:text-2xl text-purple-400 mb-4">
+<p className="text-purple-400 mb-2 font-medium tracking-wider uppercase text-sm">
 My Work
 </p>
 
-<h2 className="text-3xl md:text-5xl font-bold">
+<h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
 Featured Projects
 </h2>
 

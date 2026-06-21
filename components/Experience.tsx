@@ -6,23 +6,21 @@ return(
 
 <section
 id="experience"
-className="py-28 px-6"
+className="portfolio-bg py-10 px-6"
 >
-
+<div className="grid-pattern"></div>
 <div className="max-w-6xl mx-auto">
 
 <div className="text-center mb-16">
 
-<p className="text-purple-400">
+ <p className="text-purple-400 mb-2 font-medium tracking-wider uppercase text-sm">
 My Journey
 </p>
-
-<h2 className="text-3xl md:text-5xl font-bold mt-3">
+<h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
 Experience
 </h2>
 
 </div>
-
 
 {portfolioData.experience.map((exp,index)=>(
 

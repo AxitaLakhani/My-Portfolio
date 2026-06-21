@@ -71,15 +71,23 @@ export default function Hero() {
             transition={{ delay: .7 }}
             className="mt-8 flex gap-5 flex-wrap"
           >
-            <button className="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 transition flex items-center gap-2">
-              View Projects
-              <ArrowRight size={18} />
-            </button>
+          
+          <a
+          href="#projects"
+          className="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-700 transition flex items-center gap-2"
+          >
+            View Projects
+            <ArrowRight size={18} />
+          </a>
+          <a
+            href="/Akshita-resume.pdf"
+            download
+            className="px-6 py-3 rounded-xl border border-gray-600 hover:border-purple-500 hover:bg-white/5 transition flex items-center gap-2"
+          >
+            <Download size={18} />
+            Resume
+          </a>
 
-            <button className="px-6 py-3 rounded-xl border border-gray-600 hover:border-purple-500 hover:bg-white/5 transition flex items-center gap-2">
-              <Download size={18} />
-              Resume
-            </button>
           </motion.div>
 
           {/* Stats */}
