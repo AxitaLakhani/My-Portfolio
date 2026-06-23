@@ -10,18 +10,17 @@ export const portfolioData = {
   description:
     "MCA graduate with internship experience in full-stack web development using .NET Core, Web API, C#, React.js, and SQL Server. Passionate about building modern applications and solving real-world problems.",
 
-  email: "akshitalakhani1@gmail.com",
+  email:"akshitalakhani1@gmail.com",
 
-  phone: "+91 9409538332",
-
+  phone: "+919409538332",
+ 
   resume: "/resume.pdf",
 
-  socialLinks: {
+ socialLinks: {
+
 
     github: "https://github.com/AxitaLakhani",
-
-    linkedin: "https://linkedin.com/in/akshita-lakhani",
-
+    linkedin: "https://www.linkedin.com/in/akshita-lakhani/"
   },
 
   skills: [
@@ -136,24 +135,6 @@ tech:[
  projects: [
 
 {
-title:"E-Discovery Platform",
-
-image:"/projects/ediscovery.png",
-
-description:
-"Developed a file processing and metadata extraction system with secure user management. Integrated APIs using .NET Web API and optimized SQL Server data handling.",
-
-tech:[
-"React.js",
-"ASP.NET Web API",
-"SQL Server"
-],
-
-github:"#",
-live:"#"
-},
-
-{
 title:"Artistry in Resin",
 
 image:"/projects/resin.png",
@@ -167,7 +148,7 @@ tech:[
 "MySQL"
 ],
 
-github:"#",
+github:"https://github.com/AxitaLakhani/Artistry-in-Resin",
 live:"#"
 },
 
@@ -185,9 +166,27 @@ tech:[
 "SQLite"
 ],
 
+github:"https://github.com/AxitaLakhani/Healthcare-Application",
+live:"#"
+},
+
+{
+title:"E-Discovery Platform",
+
+image:"/projects/ediscovery.png",
+
+description:
+"Developed a file processing and metadata extraction system with secure user management. Integrated APIs using .NET Web API and optimized SQL Server data handling.",
+
+tech:[
+"React.js",
+"ASP.NET Web API",
+"SQL Server"
+],
+
 github:"#",
 live:"#"
-}
+},
 
 ]
 
