@@ -176,7 +176,7 @@ title:"E-Discovery Platform",
 image:"/projects/ediscovery.png",
 
 description:
-"Developed a file processing and metadata extraction system with secure user management. Integrated APIs using .NET Web API and optimized SQL Server data handling.",
+"Worked on a live enterprise-level project during my internship involving file processing, metadata extraction, secure user management, and API integration using .NET Web API and SQL Server. Since this is a company-owned production project, the source code is confidential and cannot be publicly shared.",
 
 tech:[
 "React.js",
@@ -184,8 +184,9 @@ tech:[
 "SQL Server"
 ],
 
-github:"#",
-live:"#"
+github:"",
+live:"#",
+private:true
 },
 
 ]

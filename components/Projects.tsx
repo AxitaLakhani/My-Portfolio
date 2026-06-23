@@ -61,7 +61,7 @@ className="py-10 px-6"
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex gap-3 mt-6 pt-4 border-t border-white/5">
+                {/* <div className="flex gap-3 mt-6 pt-4 border-t border-white/5">
                   <a
                     href={project.github}
                     target="_blank"
@@ -81,7 +81,77 @@ className="py-10 px-6"
                     Live
                     <ArrowUpRight size={16} />
                   </a>
+                </div> */}
+
+
+                <div className="flex gap-4 mt-8">
+
+                {project.private ? (
+
+                <div
+                className="
+                flex
+                items-center
+                px-4
+                py-3
+                rounded-xl
+                bg-gray-700/30
+                border
+                border-white/10
+                text-gray-400
+                "
+                >
+                🔒 Private Project
                 </div>
+
+                ) : (
+
+                <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                flex
+                items-center
+                gap-2
+                px-4
+                py-3
+                rounded-xl
+                bg-white/5
+                border
+                border-white/10
+                "
+                >
+                <GrGithub size={18}/>
+                Code
+                </a>
+
+                )}
+
+                <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                flex
+                items-center
+                gap-2
+                px-4
+                py-3
+                rounded-xl
+                bg-purple-600
+                hover:bg-purple-700
+                transition
+                "
+                >
+                Live
+                <ArrowUpRight size={18}/>
+                </a>
+
+                </div>
+
+
+
               </div>
             </div>
           ))}
