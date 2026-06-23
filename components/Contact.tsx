@@ -46,7 +46,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="portfolio-bg relative py-16 sm:py-20 px-4 sm:px-6 overflow-hidden"
+      className="portfolio-bg  py-16 sm:py-20 px-4 sm:px-6 overflow-hidden"
     >
   
 
@@ -174,7 +174,7 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Your Name"
-                    className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white outline-none focus:border-purple-500 focus:bg-white/[0.07] transition-all duration-300 text-sm sm:text-base"
+                    className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white placeholder:text-gray-400 outline-none focus:border-purple-500 focus:bg-white/[0.07] transition-all duration-300 text-sm sm:text-base"
                   />
                 </div>
 
@@ -185,7 +185,7 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Your Email"
-                    className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white outline-none focus:border-purple-500 focus:bg-white/[0.07] transition-all duration-300 text-sm sm:text-base"
+                    className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white   placeholder:text-gray-400 outline-none focus:border-purple-500 focus:bg-white/[0.07] transition-all duration-300 text-sm sm:text-base"
                   />
                 </div>
 
@@ -196,7 +196,7 @@ export default function Contact() {
                     onChange={handleChange}
                     rows={5}
                     placeholder="Your Message"
-                    className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white outline-none resize-none focus:border-purple-500 focus:bg-white/[0.07] transition-all duration-300 text-sm sm:text-base"
+                    className="w-full p-4 rounded-xl bg-white/5 border border-white/10 text-white   placeholder:text-gray-400 outline-none resize-none focus:border-purple-500 focus:bg-white/[0.07] transition-all duration-300 text-sm sm:text-base"
                   />
                 </div>
 
