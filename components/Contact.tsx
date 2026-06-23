@@ -48,9 +48,9 @@ export default function Contact() {
       id="contact"
       className="portfolio-bg  py-16 sm:py-20 px-4 sm:px-6 overflow-hidden"
     >
-  
+      <div className="grid-pattern"></div>
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto  portfolio-content">
         {/* Heading */}
         <div className="text-center mb-12">
           <p className="text-purple-400 mb-2 font-medium tracking-wider uppercase text-sm">
